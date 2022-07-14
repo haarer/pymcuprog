@@ -2,9 +2,10 @@
     "name": "tool-pymcuprog",
     "description": "Python MCU programmer",
     "url": "https://github.com/haarer/pymcuprog",
-    "version": "3.13.0-may2022",
+    "version": "3.13.3-166-may2022",
 	
 	"scripts": {
-	"postinstall": "setup.py install"
+	"postinstall": "c:/users/mac/.platformio/penv/scripts/python setup.py install",
+  "preuninstall": "c:/users/mac/.platformio/penv/scripts/pip uninstall -q pymcuprog "
   }
 }
