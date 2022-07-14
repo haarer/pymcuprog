@@ -10,7 +10,7 @@ Add the package using a platform_packages statement as in the following example 
 platform_packages = 
 	tool-pymcuprog @ https://github.com/haarer/pymcuprog.git
 ```
-Full ini example, using the pymcuprog to flash an attiny1614
+Full ini of an [example project](https://github.com/haarer/uhal-examples/tree/main/test-uhal-blink-attiny-1614), using the pymcuprog to flash an attiny1614
 ```
 [env]
 platform = atmelmegaavr
