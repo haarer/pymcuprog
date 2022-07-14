@@ -1,8 +1,31 @@
 
-# pymcuprog - Python MCU programmer
-pymcuprog is a Python utility for programming various Microchip MCU devices using Microchip CMSIS-DAP based debuggers
+# pymcuprog - PlatformIO Tool Package providing the pymcuprog Python MCU programmer
+*pymcuprog is a Python utility for programming various Microchip MCU devices using Microchip CMSIS-DAP based debuggers*
+*This is just modified to be a platformio package - all it requires is a package.json file*
 
-this is modified to be a platformio package
+## Usage with PlatformIO
+
+Add the package using a platform_packages statement as in the following example to your platformio.ini
+```
+platform_packages = 
+	tool-pymcuprog @ https://github.com/haarer/pymcuprog.git
+```
+Full ini example, using the pymcuprog to flash an attiny1614
+```
+[env]
+platform = atmelmegaavr
+build_flags = -std=c++17
+build_unflags = -std=gnu++11
+lib_deps = git@github.com:haarer/uhal.git
+board = ATtiny1614
+board_build.f_cpu = 20000000L
+upload_protocol = custom
+upload_command = 
+	pymcuprog write --erase -d attiny1614 --filename $SOURCE
+platform_packages = 
+	tool-pymcuprog @ https://github.com/haarer/pymcuprog.git
+```
+
 
 
 Browse source code on [github](https://github.com/microchip-pic-avr-tools/pymcuprog)
