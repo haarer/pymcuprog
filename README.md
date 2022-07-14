@@ -1,12 +1,9 @@
-[![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # pymcuprog - Python MCU programmer
 pymcuprog is a Python utility for programming various Microchip MCU devices using Microchip CMSIS-DAP based debuggers
 
-Install using pip from [pypi](https://pypi.org/project/pymcuprog):
-```bash
-pip install pymcuprog
-```
+this is modified to be a platformio package
+
 
 Browse source code on [github](https://github.com/microchip-pic-avr-tools/pymcuprog)
 
