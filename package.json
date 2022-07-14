@@ -1,6 +1,10 @@
 {
-    "name": "framework-arduinoespressif8266",
-    "description": "Arduino Wiring-based Framework (ESP8266 Core)",
-    "url": "https://github.com/esp8266/Arduino",
-    "version": "3.1.0-dev"
+    "name": "tool-pymcuprog",
+    "description": "Python MCU programmer",
+    "url": "https://github.com/haarer/pymcuprog",
+    "version": "3.13.0-may2022",
+	
+	"scripts": {
+	"postinstall": "setup.py install"
+  }
 }
