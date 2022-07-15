@@ -5,7 +5,7 @@
     "version": "3.13.3-166-may2022",
 	
 	"scripts": {
-	"postinstall": "$home/scripts/python setup.py install",
-  "preuninstall": "$home/scripts/pip uninstall -q pymcuprog "
+	"postinstall": ["setup.py", "install"],
+  "preuninstall": ["pip", "uninstall", "-q", "pymcuprog"]
   }
 }
