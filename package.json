@@ -5,7 +5,7 @@
     "version": "3.13.3-166-may2022",
 	
 	"scripts": {
-	"postinstall": "c:/users/mac/.platformio/penv/scripts/python setup.py install",
-  "preuninstall": "c:/users/mac/.platformio/penv/scripts/pip uninstall -q pymcuprog "
+	"postinstall": "scripts/python setup.py install",
+  "preuninstall": "scripts/pip uninstall -q pymcuprog "
   }
 }
